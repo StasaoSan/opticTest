@@ -251,7 +251,7 @@ function handleAnswer(selectedBtn, isCorrect, shuffled) {
 
   if (isCorrect) {
     state.correct++;
-    if (state.mode === 'wrong') {
+    if (wrongSet.has(q.originalIndex)) {
       wrongSet.delete(q.originalIndex);
       store.saveWrong(wrongSet);
     }
