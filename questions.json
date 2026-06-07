@@ -60,11 +60,11 @@
         },
         {
           "text": "продолжительности воздействия холода",
-          "correct": false
+          "correct": true
         },
         {
           "text": "температуры действующего агента",
-          "correct": true
+          "correct": false
         }
       ]
     },
