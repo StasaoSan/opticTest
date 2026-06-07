@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Cards</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ── Loading screen ── -->
+  <section id="loading-screen" class="active">
+    <p class="subtitle">Загрузка вопросов…</p>
+  </section>
+
+  <!-- ── Home screen ── -->
+  <section id="home-screen">
+    <div class="home-header">
+      <h1>Quiz Cards</h1>
+      <p id="home-subtitle" class="subtitle"></p>
+    </div>
+
+    <div class="menu-list">
+
+      <button class="menu-btn" id="btn-pool">
+        <div class="menu-btn-icon pool-icon">80</div>
+        <div class="menu-btn-body">
+          <span class="menu-btn-title">Следующие вопросы</span>
+          <span class="menu-btn-sub" id="pool-sub">—</span>
+        </div>
+        <span class="menu-chevron">›</span>
+      </button>
+
+      <button class="menu-btn" id="btn-favorites" disabled>
+        <div class="menu-btn-icon fav-icon">★</div>
+        <div class="menu-btn-body">
+          <span class="menu-btn-title">Избранное</span>
+          <span class="menu-btn-sub" id="fav-sub">0 вопросов</span>
+        </div>
+        <span class="menu-chevron">›</span>
+      </button>
+
+      <button class="menu-btn" id="btn-wrong" disabled>
+        <div class="menu-btn-icon wrong-icon">✗</div>
+        <div class="menu-btn-body">
+          <span class="menu-btn-title">Мои ошибки</span>
+          <span class="menu-btn-sub" id="wrong-sub">0 вопросов</span>
+        </div>
+        <span class="menu-chevron">›</span>
+      </button>
+
+    </div>
+
+    <button class="btn btn-ghost btn-sm" id="btn-reset-progress">Сбросить прогресс пула</button>
+  </section>
+
+  <!-- ── Quiz screen ── -->
+  <section id="quiz-screen">
+
+    <div class="quiz-header">
+      <button class="back-btn" id="back-btn">‹ Меню</button>
+      <div class="quiz-meta">
+        <span class="badge" id="score">0 / 0</span>
+        <span class="badge" id="timer">00:00</span>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+    </div>
+
+    <div class="question-card">
+      <div class="question-meta">
+        <div class="question-num" id="question-num">Вопрос 1 из …</div>
+        <button class="fav-toggle" id="fav-toggle" title="В избранное">☆</button>
+      </div>
+      <div class="question-text" id="question-text"></div>
+    </div>
+
+    <div class="answers-grid" id="answers-grid"></div>
+
+    <div class="quiz-footer">
+      <button class="btn" id="next-btn" style="display:none">Следующий →</button>
+    </div>
+
+  </section>
+
+  <!-- ── Results screen ── -->
+  <section id="results-screen">
+    <div class="result-icon" id="result-icon">🎉</div>
+    <h2 id="result-heading">Результат</h2>
+
+    <div class="result-stats">
+      <div class="stat-card">
+        <span class="stat-label">Верно</span>
+        <span class="stat-value green" id="stat-correct">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Неверно</span>
+        <span class="stat-value red" id="stat-wrong">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Время</span>
+        <span class="stat-value" id="stat-time">00:00</span>
+      </div>
+    </div>
+
+    <div class="result-actions">
+      <button class="btn" id="btn-restart">Ещё раз</button>
+      <button class="btn btn-ghost" id="btn-home">На главную</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
