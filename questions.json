@@ -5647,11 +5647,11 @@
           "correct": false
         },
         {
-          "text": "Rp: OD sph - 2.0 D OS sph - 5.0 D Rp: OD sph - 1.75 D",
+          "text": "Rp: OD sph - 2.0 D OS sph - 5.0 D",
           "correct": false
         },
         {
-          "text": "OS sph - 4.5",
+          "text": " Rp: OD sph - 1.75 D OS sph - 4.5",
           "correct": false
         }
       ]
