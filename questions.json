@@ -689,19 +689,19 @@
       "question": "ОПТИМАЛЬНЫМ НАЗНАЧЕНИЕМ КОРРЕКЦИИ ДЛЯ ПАЦИЕНТА 18 ЛЕТ С РЕЗУЛЬТАТАМИ ОПТОМЕТРИЧЕСКОГО ОБСЛЕДОВАНИЯ: VISUS OD = 1,0 СО SPH + 1.0 D = 1.0 VISUS OS = 1,0 СО SPH + 1.0 D = 1.0 И ДАННЫМИ РЕТИНОСКОПИИ: OD HM 1.0D HM 1.0D HM 1.0D OS HM 1.0, ЯВЛЯЕТСЯ",
       "answers": [
         {
-          "text": "Очки не требуются Rp: OD Sph + 2.0 D",
+          "text": "Очки не требуются",
           "correct": true
         },
         {
-          "text": "OS Sph + 2.0 D D.S. Очки для дали Rp: OD Sph + 1.0 D",
+          "text": "Rp: OD Sph + 2.0 D OS Sph + 2.0 D D.S. Очки для дали",
           "correct": false
         },
         {
-          "text": "OS Sph +1.0 D D.S. Очки для постоянного ношения Rp: OD Sph + 0.5 D",
+          "text": " Rp: OD Sph + 1.0 D OS Sph +1.0 D D.S. Очки для постоянного ношения",
           "correct": false
         },
         {
-          "text": "OS Sph + 0.5 D D.S. Очки для близи",
+          "text": " Rp: OD Sph + 0.5 D OS Sph + 0.5 D D.S. Очки для близи",
           "correct": false
         }
       ]
